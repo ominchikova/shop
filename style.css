@@ -1,0 +1,9 @@
+.wrapper {
+
+    margin: 0 405px;
+}
+.landing {
+    background-image: url(./assets/bgc.png);
+    width: 1920px;
+    height: 900px;
+}
