@@ -2,13 +2,35 @@
     margin: 5;
     padding: 0;
 }
+ button { 
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
 
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
 body {
     overflow-x: hidden;
 }
 
 .wrapper {
-    margin: 0 200px;
+    margin: 0 405px;
     box-sizing: border-box;
 }
 .landing {
@@ -58,8 +80,28 @@ color: #FFFFFF;
     color: #FFFFFF;
     margin: 0 405px;
     align-items: center;
-}
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #ffffff;
 
+    
+}
+.list-item {
+    display: flex;
+    list-style: none;
+    width: 285px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+    font-size: 14px;
+    border-right: 1px solid #FFFFFF;
+ 
+}
+.list-item:last-child { 
+    border: none;
+}
 
 
 
