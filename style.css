@@ -177,6 +177,12 @@ color: #FFFFFF;
     
     color: #FFFFFF;
 } 
+.line {
+    display: flex;
+    width: 160px;
+    border: 1px solid #ffffff;
+    margin-bottom: 40px;
+}
 .text-page {
     border: none;
     width: 733px;
@@ -216,11 +222,30 @@ color: #FFFFFF;
 }
 
 .collection {
+    box-sizing: border-box;
     width: 1920px;
     height: 1038px;
+    padding: 60px 0;
     background: #E6E3C4;
-    margin-right: 0;
-    font-family: 'Montserrat', sans-serif;
+ 
+    
 }
+.collection-content {
+    width: 1100px;
+    height: 878px;
+    box-sizing: border-box;
+    border-top: 1px solid #998431;
+    border-bottom: 1px solid #998431;
 
+}
+.collection-row-collection {
+    display: flex;
+    width: 100%;
+    height: 758px;
+    justify-content: space-between;
+}
+.collection-column {
+    display: flex;
+    flex-direction: column;
+}
 
