@@ -177,11 +177,12 @@ color: #FFFFFF;
     
     color: #FFFFFF;
 } 
-.line {
+.line-black {
     display: flex;
     width: 160px;
-    border: 1px solid #ffffff;
-    margin-bottom: 40px;
+    height: 1px;    
+    background-color:#282828;
+
 }
 .text-page {
     border: none;
@@ -225,7 +226,7 @@ color: #FFFFFF;
     box-sizing: border-box;
     width: 1920px;
     height: 1038px;
-    padding: 60px 0;
+    padding: 80px 0;
     background: #E6E3C4;
  
     
@@ -233,19 +234,220 @@ color: #FFFFFF;
 .collection-content {
     width: 1100px;
     height: 878px;
-    box-sizing: border-box;
     border-top: 1px solid #998431;
     border-bottom: 1px solid #998431;
+        box-sizing: border-box;
 
 }
-.collection-row-collection {
+.collection-row-container {
     display: flex;
     width: 100%;
     height: 758px;
+    margin: 60px 0;
     justify-content: space-between;
 }
 .collection-column {
     display: flex;
     flex-direction: column;
+    width: 445px;
+    justify-content: space-between;
+    
+   
+}
+.collection-picture {
+    width: 540px;
+}
+.column-subtitle {
+
+line-height: 150%;
+
+}
+.column-title {
+    font-family: Playfair Display;
+font-size: 36px;
+line-height: 150%;
+color: #282828;
+text-align: start;
+width: 298px;
+}
+.line {
+    width: 160px;
+    border: 0.5px solid #282828;
+    margin-bottom: 40px;
+}
+.column-text {
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 150%;
+   /* width: 445px;
+    height: 84px;*/
+    color: #282828;
+}
+/*.first-cell {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #282828;
+    width: 32px;
+    height: 21px;
+
+}
+.cell-title {
+    font-family: Playfair Display;
+    font-size: 18px;
+    line-height: 150%;
+    width: 303px;
+    height: 27px;
+    color: #282828;
+}
+.cell-content {
+font-family: Montserrat;
+font-style: normal;
+font-size: 14px;
+line-height: 150%;
+color: #282828;
+}*/
+
+.subcolumn {
+    display: flex;
+    flex-direction: column;
+}
+.subrow {
+  display: flex;
+  border-bottom: 1px solid #282828;
+}
+.subrow:last-child {
+    border: none;
+
+}
+.first-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 73px;
+  border-right: 1px solid #282828;
+}
+.second-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.cell-title {
+  font-family: Playfair Display;
+  font-size: 18px;
+  line-height: 150%;
+  color: #282828;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.cell-content {
+  font-size: 14px;
+  line-height: 150%;
+  color: #282828;
+}
+.medium {
+    width: 254px;
+    height: 50px; ;
+}
+.picture {
+    width: 100%; 
+    height: 500px;
+}
+.picture-two {
+width: 255px; ;
+height: 228px;
+}
+.picture-three {
+width: 255px;
+height: 228px;
+
 }
 
+.rectangle {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.registration {
+    background-color: #282828;
+    width: 1920px;
+    height: 767px;
+    position: relative;
+    padding: 129px 0 100px 0;
+
+}
+.registration-card {
+    width: 1110px;
+    height: 538px;
+    box-sizing: border-box;
+    border: 3px solid #C4C4C4;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+   padding-top: 65px;
+  justify-content: space-between;
+ 
+}
+.line2 {
+    width: 118px;
+  height: 1px;
+  background-color: #fff;
+}
+.grape {
+    position: absolute;
+   top: 60px;
+   left: 375px;
+}
+.vine {
+    position: absolute;
+    top: 64px;
+    right: 352px;
+}
+.registr {
+    position: absolute;
+    top: 90px;
+    left: 715px;
+   
+    width: 490px;
+height: 74px;
+display: flex;
+/*flex-direction: row;*/
+justify-content: center;
+align-items: center;
+/*padding: 10px 50px;*/
+background: #282828;
+z-index: 3;
+font-family: Playfair Display;
+font-size: 36px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+
+
+}
+.text-card {
+    z-index: 1;
+    width: 539px;
+height: 72px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 24px */
+
+text-align: center;
+
+/* white */
+
+color: #FFFFFF;
+}
+input {
+    border: 1px solid #FFFFFF
+}
